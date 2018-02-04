@@ -1,0 +1,106 @@
+html, body {
+    margin: 0 auto;
+    width: 100%;
+}
+header {
+    background-image: url("../img/apples.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    color: #FFF;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    div.header-top {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        max-width: 1170px;
+        min-width: 900px;
+        width: 100%;
+        div a {
+            color: #FFF;
+            text-decoration: none;
+            h4 {
+                text-transform: uppercase;
+                letter-spacing: 3px;
+            }
+        }
+        div {
+            width: 400px;
+            nav ul {
+                display: flex;
+                flex-direction: row;
+                list-style-type: none;
+                padding: 0;
+                justify-content: space-between;
+                height: 30px;
+                li {
+                    &:hover {
+                        border-bottom: 1px solid #FFF;
+                        box-sizing: border-box;
+                        padding-bottom: 8px;
+                    }
+                    a {
+                        text-decoration: none;
+                        font-weight: 100;
+                        color: #FFF;
+                    }
+                }
+            }
+
+        }
+    }
+    div.center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            letter-spacing: 6px;
+            margin: 0;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            &:after {
+                content: 'TM';
+                vertical-align: 14px;
+                font-size: small;
+                display: inline-block;
+            }
+            span {
+                font-size: 60px;
+            }
+        }
+        h6 {
+            margin: 0;
+            text-transform: capitalize;
+        }
+    }
+    button {
+        border: 1px solid #FFF;
+        background-color: rgba(0, 0, 0, 0.582);
+        color: #FFF;
+        height: 40px;
+        margin-bottom: 40px;
+        width: 170px;
+    }
+}
+div.container {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+    max-width: 1170px;
+    min-width: 900px;
+    width: 100%;
+}
+footer {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+    max-width: 1170px;
+    min-width: 900px;
+    width: 100%;
+}
