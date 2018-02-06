@@ -1,0 +1,185 @@
+html, body {
+  margin: 0 auto; }
+
+body {
+  font: 14px/1.2 Arial, Helvetica, sans-serif; }
+
+header {
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  height: 80px;
+  margin: 0 auto;
+  max-width: 900px;
+  width: 100%; }
+  header div {
+    display: flex;
+    margin-right: 50px; }
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-bottom: 25px;
+    padding: 0; }
+    header nav ul li {
+      margin: 0 15px; }
+      header nav ul li a {
+        color: #333;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: bold; }
+        header nav ul li a:hover {
+          color: #39c2d7; }
+
+.banner {
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  display: flex;
+  justify-content: center;
+  height: 420px;
+  max-width: 100%; }
+  .banner div {
+    max-width: 900px;
+    flex: 1; }
+    .banner div p {
+      color: #fff;
+      font-size: 50px;
+      width: 450px;
+      align-self: flex-start; }
+
+.news {
+  box-sizing: border-box;
+  display: grid;
+  height: auto;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 20px;
+  width: 100%; }
+  .news a {
+    text-decoration: none;
+    display: inherit; }
+    .news a div {
+      background-color: #ccc;
+      padding: 10px; }
+      .news a div:hover {
+        background-color: #39c2d7; }
+      .news a div img {
+        margin-bottom: 10px;
+        max-width: 100%;
+        width: auto;
+        height: auto; }
+      .news a div h3 {
+        color: #333;
+        margin: 0;
+        margin-bottom: 10px; }
+      .news a div p {
+        color: #464547;
+        margin: 0;
+        margin-bottom: 10px; }
+
+footer {
+  background-color: #39c2d7;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  max-width: 100%;
+  width: 100%; }
+  footer div {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    margin: 0 auto;
+    max-width: 900px;
+    width: 100%; }
+    footer div nav ul {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+      footer div nav ul li {
+        margin-right: 20px; }
+        footer div nav ul li a {
+          color: #fff; }
+          footer div nav ul li a:hover {
+            text-decoration: none; }
+    footer div p {
+      margin: 0; }
+
+@media only screen and (max-width: 900px) {
+  header {
+    flex-direction: column;
+    height: auto; }
+    header div {
+      margin-right: 0; }
+      header div img {
+        margin-top: 20px; }
+
+  .banner div {
+    flex: 0;
+    text-align: center; }
+    .banner div p {
+      font-size: 25px;
+      margin-top: 50px; }
+
+  .news {
+    grid-template-columns: 1fr 1fr; }
+    .news a div img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; }
+
+  footer {
+    height: auto; }
+    footer div {
+      flex-direction: column;
+      justify-content: center; }
+      footer div nav {
+        margin: 20px 0; }
+        footer div nav ul li:nth-child(3) {
+          margin-right: 0; }
+      footer div p {
+        margin-bottom: 20px; } }
+@media only screen and (max-width: 575px) {
+  header nav {
+    width: 100%; }
+    header nav ul {
+      flex-direction: column;
+      margin-bottom: 0;
+      width: 100%; }
+      header nav ul li {
+        background-color: #eee;
+        border-top: 1px solid #ccc;
+        margin: 0;
+        padding: 10px 0 10px 20px; }
+
+  .banner {
+    padding: 20px; }
+    .banner div {
+      align-self: flex-end;
+      background-color: #39c2d7;
+      max-width: 575px;
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap; }
+      .banner div p {
+        text-align: left;
+        margin: 10px; }
+
+  .news {
+    grid-template-columns: 1fr; }
+    .news a {
+      margin: 0 20px; }
+
+  footer div nav ul {
+    flex-direction: column;
+    align-items: center; }
+    footer div nav ul li {
+      margin: 0;
+      margin-bottom: 5px; } }
