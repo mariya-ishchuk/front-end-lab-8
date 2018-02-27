@@ -1,0 +1,34 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+div ul {
+    padding-left: 20px;
+}
+
+div > ul {
+    padding: 0;
+}
+
+i {
+    float: left;
+    margin-top: -5px;
+}
+
+.empty {
+    font-style: italic;
+}
+.file {
+    color: rgb(143, 142, 142);
+}
+i.folder, i.folder_open {
+    color: rgb(235, 178, 34);
+}
+p {
+    margin: 0;
+    padding: 6px 0 6px 0;
+}
+p:hover {
+    background-color: rgb(228, 228, 228);
+}
